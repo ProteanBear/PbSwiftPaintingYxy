@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="top" translatesAutoresizingMaskIntoConstraints="NO" id="e8k-Tx-GVZ">
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="f49-HM-W42">
+                                    <frame key="frameInset"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon120.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xib-HU-bhn">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="120" id="8c2-kJ-dkS"/>
+                                                <constraint firstAttribute="width" constant="120" id="haT-ec-LO3"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新奇 古厚 拙朴" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbW-Fd-7PC">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="34" id="BQt-bd-wgr"/>
+                                                <constraint firstAttribute="width" constant="240" id="cNT-cC-uAa"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2016年 ProteanBear. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="XxP-l9-At4">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="8fB-VF-hSG"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="widthClass=compact">
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            </variation>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Xib-HU-bhn" firstAttribute="centerX" secondItem="f49-HM-W42" secondAttribute="centerX" id="DQS-lC-awT"/>
+                                        <constraint firstItem="lbW-Fd-7PC" firstAttribute="centerY" secondItem="f49-HM-W42" secondAttribute="centerY" constant="15" id="FLV-94-hrZ"/>
+                                        <constraint firstAttribute="bottom" secondItem="XxP-l9-At4" secondAttribute="bottom" constant="8" id="JWu-c7-ih6"/>
+                                        <constraint firstItem="lbW-Fd-7PC" firstAttribute="centerX" secondItem="f49-HM-W42" secondAttribute="centerX" id="Kae-3w-zDC"/>
+                                        <constraint firstItem="XxP-l9-At4" firstAttribute="leading" secondItem="f49-HM-W42" secondAttribute="leading" constant="8" id="Mbh-Qd-JRR"/>
+                                        <constraint firstAttribute="trailing" secondItem="XxP-l9-At4" secondAttribute="trailing" constant="8" id="fG8-Gv-peW"/>
+                                        <constraint firstItem="Xib-HU-bhn" firstAttribute="centerY" secondItem="f49-HM-W42" secondAttribute="centerY" constant="-70" id="ke2-2x-94W"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="extraLight"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="e8k-Tx-GVZ" secondAttribute="trailing" constant="-20" id="A78-mL-6Nj"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="e8k-Tx-GVZ" secondAttribute="bottom" id="iYa-fW-9Ra"/>
+                            <constraint firstItem="e8k-Tx-GVZ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="nCI-gY-fd7"/>
+                            <constraint firstItem="e8k-Tx-GVZ" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="sqn-0Z-JK2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon120.png" width="120" height="120"/>
+    </resources>
+</document>
